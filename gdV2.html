@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Performance Evaluation</title>
+  <style>
+    /* Add your CSS styles here */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h1>Performance Evaluation</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Disiplin</th>
+        <th>Tanggung Jawab</th>
+        <th>Stabilitas Emosi</th>
+        <th>Inisiatif & Kreativitas</th>
+        <th>Kemampuan Intelektual</th>
+        <th>Kemampuan Komunikasi</th>
+        <th>Kepemimpinan</th>
+        <th>Nilai</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Sarmila Ritonga, S.Kep</td>
+        <td>
+          <select>
+            <option value="30">SK (Sangat Kurang)</option>
+            <option value="50">K (Kurang)</option>
+            <option value="75">B (Baik)</option>
+            <option value="90">SB (Sangat Baik)</option>
+          </select>
+        </td>
+        <td>
+          <select>
+            <option value="30">SK (Sangat Kurang)</option>
+            <option value="50">K (Kurang)</option>
+            <option value="75">B (Baik)</option>
+            <option value="90">SB (Sangat Baik)</option>
+          </select>
+        </td>
+        <td>
+          <select>
+            <option value="30">SK (Sangat Kurang)</option>
+            <option value="50">K (Kurang)</option>
+            <option value="75">B (Baik)</option>
+            <option value="90">SB (Sangat Baik)</option>
+          </select>
+        </td>
+        <td>
+          <select>
+            <option value="30">SK (Sangat Kurang)</option>
+            <option value="50">K (Kurang)</option>
+            <option value="75">B (Baik)</option>
+            <option value="90">SB (Sangat Baik)</option>
+          </select>
+        </td>
+        <td>
+          <select>
+            <option value="30">SK (Sangat Kurang)</option>
+            <option value="50">K (Kurang)</option>
+            <option value="75">B (Baik)</option>
+            <option value="90">SB (Sangat Baik)</option>
+          </select>
+        </td>
+        <td>
+          <select>
+            <option value="30">SK (Sangat Kurang)</option>
+            <option value="50">K (Kurang)</option>
+            <option value="75">B (Baik)</option>
+            <option value="90">SB (Sangat Baik)</option>
+          </select>
+        </td>
+        <td>
+          <select>
+            <option value="30">SK (Sangat Kurang)</option>
+            <option value="50">K (Kurang)</option>
+            <option value="75">B (Baik)</option>
+            <option value="90">SB (Sangat Baik)</option>
+          </select>
+        </td>
+        <td>0</td>
+      </tr>
+      <!-- Add more rows for other employees -->
+    </tbody>
+  </table>
+
+  <script>
+    // Add your JavaScript code here
+    // Example: Calculate the total score
+    const tableRows = document.querySelectorAll('tbody tr');
+    tableRows.forEach(row => {
+      let totalScore = 0;
+      const selects = row.querySelectorAll('select');
+      selects.forEach(select => {
+        totalScore += parseInt(select.value);
+      });
+      row.cells[8].textContent = totalScore;
+    });
+  </script>
+</body>
+</html>
